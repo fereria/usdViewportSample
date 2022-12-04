@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"cmake.configureArgs": [
+			"-DCMAKE_TOOLCHAIN_FILE=D:/work/repos/vcpkg/scripts/buildsystems/vcpkg.cmake"
+		],
+		"terminal.integrated.profiles.windows": {
+			"workspace_cmd": {
+				"path": ["cmd.exe"],
+				"icon": "symbol-constant",
+				"env": {
+					// 環境変数を追加する
+					"PATH": "C:/USD/bin;C:/USD/lib;${env:PATH}",
+					"PYTHONPATH": "C:/USD/lib/python;${env:PYTHONPATH}"
+				}
+			}
+		},
+		"terminal.integrated.defaultProfile.windows": "workspace_cmd"
+	}
+}
